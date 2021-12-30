@@ -564,7 +564,7 @@ var renderer = (function () {
 
       for (i = 0; i < game.livesRemaining(); i++) {
         var img = document.createElement("img");
-        img.src = "/docs/assets/dronie.png";
+        img.src = url + "/docs/assets/dronie.png";
         img.style.height = "24px";
         img.style.width = "24px";
 
