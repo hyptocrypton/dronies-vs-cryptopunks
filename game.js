@@ -6,6 +6,9 @@
 /*jslint devel: true, browser: true, nomen: true */
 
 "use-strict";
+//Root Domain
+const url = "https://hyptocrypton.github.io/dronies-vs-cryptopunks/"
+
 //
 // Vec2D
 //
@@ -478,9 +481,9 @@ var renderer = (function () {
     _context = _canvas.getContext("2d"),
     _bulletColors = { dronie: "#9FEAA4", enemy: "#FCE38F" };
 
-  var _dronieSprite = new Sprite("/docs/assets/dronie.png", 1, 1, 255, 255, 0);
+  var _dronieSprite = new Sprite(url + "/docs/assets/dronie.png", 1, 1, 255, 255, 0);
   var _dronieExplosionSprite = new Sprite(
-    "/docs/assets/dead-dronie.png",
+    url + "/docs/assets/dead-dronie.png",
     2,
     4,
     255,
@@ -489,19 +492,19 @@ var renderer = (function () {
   );
 
   var _enemySprites = [
-    new Sprite("/docs/assets/punk2338.png", 2, 2, 150, 7, 7),
-    new Sprite("/docs/assets/punk2338.png", 2, 2, 150, 89, 7),
-    new Sprite("/docs/assets/punk5217.png", 2, 2, 56, 150, 7),
-    new Sprite("/docs/assets/punk5217.png", 2, 2, 7, 150, 122),
-    new Sprite("/docs/assets/punk3100.png", 2, 2, 46, 7, 150),
+    new Sprite(url + "/docs/assets/punk2338.png", 2, 2, 150, 7, 7),
+    new Sprite(url + "/docs/assets/punk2338.png", 2, 2, 150, 89, 7),
+    new Sprite(url + "/docs/assets/punk5217.png", 2, 2, 56, 150, 7),
+    new Sprite(url + "/docs/assets/punk5217.png", 2, 2, 7, 150, 122),
+    new Sprite(url + "/docs/assets/punk3100.png", 2, 2, 46, 7, 150),
   ];
 
   var _explosionSprites = [
-    new Sprite("/docs/assets/explosion.png", 1, 1, 150, 7, 7),
-    new Sprite("/docs/assets/explosion.png", 1, 1, 150, 89, 7),
-    new Sprite("/docs/assets/explosion.png", 1, 1, 56, 150, 7),
-    new Sprite("/docs/assets/explosion.png", 1, 1, 7, 150, 122),
-    new Sprite("/docs/assets/explosion.png", 1, 1, 46, 7, 150),
+    new Sprite(url + "/docs/assets/explosion.png", 1, 1, 150, 7, 7),
+    new Sprite(url + "/docs/assets/explosion.png", 1, 1, 150, 89, 7),
+    new Sprite(url + "/docs/assets/explosion.png", 1, 1, 56, 150, 7),
+    new Sprite(url + "/docs/assets/explosion.png", 1, 1, 7, 150, 122),
+    new Sprite(url + "/docs/assets/explosion.png", 1, 1, 46, 7, 150),
   ];
 
   var _sprites = [].concat(
